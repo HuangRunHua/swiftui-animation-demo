@@ -11,3 +11,4 @@
 - [Loading Animation](https://github.com/HuangRunHua/swiftui-animation-demo/tree/main/LoadingErrorAndSuccessAnimation.swiftpm): View the demo video -> [🎬](https://twitter.com/joker_hook/status/1553951987590254592?s=20&t=Y8B2sKDHLhAe4O9ftO4XCA)
 - [App Store Downloading-like animation](https://github.com/HuangRunHua/EnterButtonAnimation): View the demo video -> [🎬](https://github.com/HuangRunHua/EnterButtonAnimation/blob/master/intro.GIF)
 - [Music Lyrics scrolling animation effect](https://github.com/HuangRunHua/Apple-Music-Lyric-Animation): View the demo video -> [🎬](https://www.iqiyi.com/v_12gaeft27y0.html?social_platform=link&p1=2_22_221&_frd=r3T7FVFZY4WGpn7q8D4%2BAkJ9%2BJ7oBBAvUPij3aANcYjYQqueprX9X30sKyc4b9l0e5P56v1gQOJvo7dG47UKaJgWKFzgweqjN6nCt7WIngk%3D)
+- [Medium Clap Animation](https://github.com/HuangRunHua/swiftui-animation-demo/tree/main/MediumClapAnimation.swiftpm): View the demo video -> [🎬]()
