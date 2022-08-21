@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct DoneButtonView: View {
+public struct DoneButton: View {
     
     @State private var checkButtonTapped: Bool = false
     @State private var showCheckmark: Bool = false
