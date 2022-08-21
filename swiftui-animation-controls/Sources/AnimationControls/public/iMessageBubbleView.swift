@@ -27,6 +27,7 @@ public struct iMessageBubbleView: View {
             .frame(width: 25, height: 25)
     }
     
+    public init() { }
     
     public var body: some View {
         ZStack {
