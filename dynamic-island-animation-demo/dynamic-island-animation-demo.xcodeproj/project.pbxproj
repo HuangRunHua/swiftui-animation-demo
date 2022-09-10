@@ -17,8 +17,20 @@
 		BDB8503C28CB14A200D92C08 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB8503A28CB14A200D92C08 /* BackgroundView.swift */; };
 		BDB8503E28CB157800D92C08 /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB8503D28CB157800D92C08 /* BasicView.swift */; };
 		BDB8503F28CB157800D92C08 /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB8503D28CB157800D92C08 /* BasicView.swift */; };
-		BDB8504328CB176700D92C08 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB8504228CB176700D92C08 /* LockView.swift */; };
-		BDB8504428CB176700D92C08 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB8504228CB176700D92C08 /* LockView.swift */; };
+		BDDACBCE28CC46E900383F37 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBCD28CC46E900383F37 /* BatteryView.swift */; };
+		BDDACBCF28CC46E900383F37 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBCD28CC46E900383F37 /* BatteryView.swift */; };
+		BDDACBD128CC48F700383F37 /* DynamicIslandBatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBD028CC48F700383F37 /* DynamicIslandBatteryView.swift */; };
+		BDDACBD228CC48F700383F37 /* DynamicIslandBatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBD028CC48F700383F37 /* DynamicIslandBatteryView.swift */; };
+		BDDACBD428CC518B00383F37 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBD328CC518B00383F37 /* Preference.swift */; };
+		BDDACBD528CC518B00383F37 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBD328CC518B00383F37 /* Preference.swift */; };
+		BDDACBDD28CC6A3300383F37 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBDC28CC6A3300383F37 /* MusicView.swift */; };
+		BDDACBDE28CC6A3300383F37 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBDC28CC6A3300383F37 /* MusicView.swift */; };
+		BDDACBE028CC6EFB00383F37 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBDF28CC6EFB00383F37 /* TestView.swift */; };
+		BDDACBE128CC6EFB00383F37 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBDF28CC6EFB00383F37 /* TestView.swift */; };
+		BDDACBE428CC78D000383F37 /* MusicScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBE228CC78D000383F37 /* MusicScaleView.swift */; };
+		BDDACBE528CC78D000383F37 /* MusicScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBE228CC78D000383F37 /* MusicScaleView.swift */; };
+		BDDACBE628CC78D000383F37 /* MusicPeakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBE328CC78D000383F37 /* MusicPeakView.swift */; };
+		BDDACBE728CC78D000383F37 /* MusicPeakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBE328CC78D000383F37 /* MusicPeakView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +42,13 @@
 		BDB8502B28CB107A00D92C08 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		BDB8503A28CB14A200D92C08 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		BDB8503D28CB157800D92C08 /* BasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
-		BDB8504228CB176700D92C08 /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		BDDACBCD28CC46E900383F37 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
+		BDDACBD028CC48F700383F37 /* DynamicIslandBatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandBatteryView.swift; sourceTree = "<group>"; };
+		BDDACBD328CC518B00383F37 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		BDDACBDC28CC6A3300383F37 /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
+		BDDACBDF28CC6EFB00383F37 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		BDDACBE228CC78D000383F37 /* MusicScaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicScaleView.swift; sourceTree = "<group>"; };
+		BDDACBE328CC78D000383F37 /* MusicPeakView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPeakView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +83,7 @@
 			children = (
 				BDB8501C28CB107900D92C08 /* dynamic_island_animation_demoApp.swift */,
 				BDB8501D28CB107900D92C08 /* ContentView.swift */,
+				BDDACBD328CC518B00383F37 /* Preference.swift */,
 				BDB8504128CB172400D92C08 /* Views */,
 				BDB8504028CB16F200D92C08 /* Helper */,
 				BDB8501E28CB107A00D92C08 /* Assets.xcassets */,
@@ -93,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				BDB8503A28CB14A200D92C08 /* BackgroundView.swift */,
-				BDB8504228CB176700D92C08 /* LockView.swift */,
+				BDDACBCD28CC46E900383F37 /* BatteryView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -101,7 +120,12 @@
 		BDB8504128CB172400D92C08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BDDACBE328CC78D000383F37 /* MusicPeakView.swift */,
+				BDDACBE228CC78D000383F37 /* MusicScaleView.swift */,
 				BDB8503D28CB157800D92C08 /* BasicView.swift */,
+				BDDACBD028CC48F700383F37 /* DynamicIslandBatteryView.swift */,
+				BDDACBDC28CC6A3300383F37 /* MusicView.swift */,
+				BDDACBDF28CC6EFB00383F37 /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,10 +228,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDDACBD428CC518B00383F37 /* Preference.swift in Sources */,
 				BDB8503B28CB14A200D92C08 /* BackgroundView.swift in Sources */,
+				BDDACBDD28CC6A3300383F37 /* MusicView.swift in Sources */,
+				BDDACBCE28CC46E900383F37 /* BatteryView.swift in Sources */,
 				BDB8502E28CB107A00D92C08 /* ContentView.swift in Sources */,
+				BDDACBE428CC78D000383F37 /* MusicScaleView.swift in Sources */,
+				BDDACBD128CC48F700383F37 /* DynamicIslandBatteryView.swift in Sources */,
+				BDDACBE028CC6EFB00383F37 /* TestView.swift in Sources */,
+				BDDACBE628CC78D000383F37 /* MusicPeakView.swift in Sources */,
 				BDB8502C28CB107A00D92C08 /* dynamic_island_animation_demoApp.swift in Sources */,
-				BDB8504328CB176700D92C08 /* LockView.swift in Sources */,
 				BDB8503E28CB157800D92C08 /* BasicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,10 +246,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDDACBD528CC518B00383F37 /* Preference.swift in Sources */,
 				BDB8503C28CB14A200D92C08 /* BackgroundView.swift in Sources */,
+				BDDACBDE28CC6A3300383F37 /* MusicView.swift in Sources */,
+				BDDACBCF28CC46E900383F37 /* BatteryView.swift in Sources */,
 				BDB8502F28CB107A00D92C08 /* ContentView.swift in Sources */,
+				BDDACBE528CC78D000383F37 /* MusicScaleView.swift in Sources */,
+				BDDACBD228CC48F700383F37 /* DynamicIslandBatteryView.swift in Sources */,
+				BDDACBE128CC6EFB00383F37 /* TestView.swift in Sources */,
+				BDDACBE728CC78D000383F37 /* MusicPeakView.swift in Sources */,
 				BDB8502D28CB107A00D92C08 /* dynamic_island_animation_demoApp.swift in Sources */,
-				BDB8504428CB176700D92C08 /* LockView.swift in Sources */,
 				BDB8503F28CB157800D92C08 /* BasicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

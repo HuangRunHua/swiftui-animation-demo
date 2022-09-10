@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct BackgroundView: View {
-    var cornerRadius: CGFloat = 10
+    var cornerRadius: CGFloat = 30
     var body: some View {
         RoundedRectangle(cornerRadius: self.cornerRadius)
     }
