@@ -12,18 +12,19 @@ struct MusicView: View {
     @Namespace private var shapeTransition
     
     @Binding var showScaleView: Bool
+    @Binding var showMusicdetialInfo: Bool
     
     var body: some View {
         if showScaleView {
-            VStack(spacing: 14) {
+            ZStack {
                 HStack(alignment: .top) {
                     HStack {
                         Image("music")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
+                            .cornerRadius(15)
                             .matchedGeometryEffect(id: "albumview", in: shapeTransition)
                             .frame(width: 70, height: 70)
-                            .cornerRadius(15)
                         VStack(alignment: .leading) {
                             Text("Entropy")
                                 .foregroundColor(.white)
@@ -53,6 +54,8 @@ struct MusicView: View {
                         .foregroundColor(.gray)
                         .font(.system(size: 10))
                 }
+                .offset(x: 0, y: 60)
+                .opacity(self.showMusicdetialInfo ? 1: 0)
                 
                 HStack {
                     Image(systemName: "airplayaudio")
@@ -91,19 +94,22 @@ struct MusicView: View {
                         .foregroundColor(.white)
                         .frame(width: 20, height: 20)
                 }
+                .offset(x: 0, y: 110)
+                .opacity(self.showMusicdetialInfo ? 1: 0)
                 
+                Spacer()
             }
-            .padding(21)
+            .padding()
         } else {
-            VStack(spacing: 14) {
+            ZStack {
                 HStack(alignment: .top) {
                     HStack {
                         Image("music")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
+                            .cornerRadius(15)
                             .matchedGeometryEffect(id: "albumview", in: shapeTransition)
                             .frame(width: 40, height: 40)
-                            .cornerRadius(15)
                         VStack(alignment: .leading) {
                             Text("Entropy")
                                 .foregroundColor(.white)
@@ -135,7 +141,7 @@ struct MusicView: View {
                         .foregroundColor(.gray)
                         .font(.system(size: 10))
                 }
-                .offset(x: 0, y: -55)
+                .offset(x: 0, y: 60)
                 .hidden()
                 
                 HStack {
@@ -175,8 +181,10 @@ struct MusicView: View {
                         .foregroundColor(.white)
                         .frame(width: 20, height: 20)
                 }
-                .offset(x: 0, y: -75)
+                .offset(x: 0, y: 110)
                 .hidden()
+                
+                Spacer()
             }
             .padding()
         }
@@ -186,7 +194,7 @@ struct MusicView: View {
 
 struct MusicView_Previews: PreviewProvider {
     static var previews: some View {
-        MusicView(showScaleView: .constant(true))
+        MusicView(showScaleView: .constant(false), showMusicdetialInfo: .constant(false))
             .preferredColorScheme(.dark)
     }
 }

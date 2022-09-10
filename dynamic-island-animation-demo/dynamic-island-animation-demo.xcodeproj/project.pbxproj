@@ -27,10 +27,6 @@
 		BDDACBDE28CC6A3300383F37 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBDC28CC6A3300383F37 /* MusicView.swift */; };
 		BDDACBE028CC6EFB00383F37 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBDF28CC6EFB00383F37 /* TestView.swift */; };
 		BDDACBE128CC6EFB00383F37 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBDF28CC6EFB00383F37 /* TestView.swift */; };
-		BDDACBE428CC78D000383F37 /* MusicScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBE228CC78D000383F37 /* MusicScaleView.swift */; };
-		BDDACBE528CC78D000383F37 /* MusicScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBE228CC78D000383F37 /* MusicScaleView.swift */; };
-		BDDACBE628CC78D000383F37 /* MusicPeakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBE328CC78D000383F37 /* MusicPeakView.swift */; };
-		BDDACBE728CC78D000383F37 /* MusicPeakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACBE328CC78D000383F37 /* MusicPeakView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +43,6 @@
 		BDDACBD328CC518B00383F37 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
 		BDDACBDC28CC6A3300383F37 /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 		BDDACBDF28CC6EFB00383F37 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		BDDACBE228CC78D000383F37 /* MusicScaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicScaleView.swift; sourceTree = "<group>"; };
-		BDDACBE328CC78D000383F37 /* MusicPeakView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPeakView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +114,6 @@
 		BDB8504128CB172400D92C08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BDDACBE328CC78D000383F37 /* MusicPeakView.swift */,
-				BDDACBE228CC78D000383F37 /* MusicScaleView.swift */,
 				BDB8503D28CB157800D92C08 /* BasicView.swift */,
 				BDDACBD028CC48F700383F37 /* DynamicIslandBatteryView.swift */,
 				BDDACBDC28CC6A3300383F37 /* MusicView.swift */,
@@ -233,10 +225,8 @@
 				BDDACBDD28CC6A3300383F37 /* MusicView.swift in Sources */,
 				BDDACBCE28CC46E900383F37 /* BatteryView.swift in Sources */,
 				BDB8502E28CB107A00D92C08 /* ContentView.swift in Sources */,
-				BDDACBE428CC78D000383F37 /* MusicScaleView.swift in Sources */,
 				BDDACBD128CC48F700383F37 /* DynamicIslandBatteryView.swift in Sources */,
 				BDDACBE028CC6EFB00383F37 /* TestView.swift in Sources */,
-				BDDACBE628CC78D000383F37 /* MusicPeakView.swift in Sources */,
 				BDB8502C28CB107A00D92C08 /* dynamic_island_animation_demoApp.swift in Sources */,
 				BDB8503E28CB157800D92C08 /* BasicView.swift in Sources */,
 			);
@@ -251,10 +241,8 @@
 				BDDACBDE28CC6A3300383F37 /* MusicView.swift in Sources */,
 				BDDACBCF28CC46E900383F37 /* BatteryView.swift in Sources */,
 				BDB8502F28CB107A00D92C08 /* ContentView.swift in Sources */,
-				BDDACBE528CC78D000383F37 /* MusicScaleView.swift in Sources */,
 				BDDACBD228CC48F700383F37 /* DynamicIslandBatteryView.swift in Sources */,
 				BDDACBE128CC6EFB00383F37 /* TestView.swift in Sources */,
-				BDDACBE728CC78D000383F37 /* MusicPeakView.swift in Sources */,
 				BDB8502D28CB107A00D92C08 /* dynamic_island_animation_demoApp.swift in Sources */,
 				BDB8503F28CB157800D92C08 /* BasicView.swift in Sources */,
 			);

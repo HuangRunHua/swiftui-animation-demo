@@ -13,62 +13,63 @@ struct ContentView: View {
     @State private var showBatteryInfo: Bool = false
     @State private var showMusicInfo:Bool = false
     @State private var showMusicdetailInfo: Bool = false
+    @State private var showMusicScaleDetailInfo: Bool = false
+    @State private var buttonDisabled: Bool = false
     
     var body: some View {
-        VStack {
-            if currentIsland == .none {
-                BackgroundView()
-                    .matchedGeometryEffect(id: "island", in: shapeTransition)
-                    .overlay {
-                        ZStack {
-                            DynamicIslandBatteryView()
-                                .opacity(0)
-                                .matchedGeometryEffect(id: "batteryview", in: shapeTransition)
-                            MusicView(showScaleView: $showMusicdetailInfo)
-                                .opacity(0)
-                                .offset(x: 0, y: self.showMusicdetailInfo ? 0: 40)
-                                .matchedGeometryEffect(id: "musicview", in: shapeTransition)
+        ZStack {
+            VStack {
+                if currentIsland == .none {
+                    BackgroundView()
+                        .matchedGeometryEffect(id: "island", in: shapeTransition)
+                        .overlay {
+                            ZStack {
+                                DynamicIslandBatteryView()
+                                    .opacity(0)
+                                    .matchedGeometryEffect(id: "batteryview", in: shapeTransition)
+                                MusicView(showScaleView: $showMusicdetailInfo, showMusicdetialInfo: $showMusicScaleDetailInfo)
+                                    .opacity(0)
+                                    .offset(x: 0, y: self.showMusicScaleDetailInfo ? -50: 0)
+                                    .matchedGeometryEffect(id: "musicview", in: shapeTransition)
+                            }
                         }
-                    }
-                    .frame(width: 140, height: 40)
-            } else if currentIsland == .batteryView {
-                BackgroundView(cornerRadius: 30)
-                    .matchedGeometryEffect(id: "island", in: shapeTransition)
-                    .overlay {
-                        ZStack {
-                            DynamicIslandBatteryView()
-                                .opacity(self.showBatteryInfo ? 1: 0)
-                                .matchedGeometryEffect(id: "batteryview", in: shapeTransition)
-                            MusicView(showScaleView: $showMusicdetailInfo)
-                                .opacity(0)
-                                .offset(x: 0, y: self.showMusicdetailInfo ? 0: 40)
-                                .matchedGeometryEffect(id: "musicview", in: shapeTransition)
-                                
+                        .frame(width: 140, height: 40)
+                } else if currentIsland == .batteryView {
+                    BackgroundView(cornerRadius: 30)
+                        .matchedGeometryEffect(id: "island", in: shapeTransition)
+                        .overlay {
+                            ZStack {
+                                DynamicIslandBatteryView()
+                                    .opacity(self.showBatteryInfo ? 1: 0)
+                                    .matchedGeometryEffect(id: "batteryview", in: shapeTransition)
+                                MusicView(showScaleView: $showMusicdetailInfo, showMusicdetialInfo: $showMusicScaleDetailInfo)
+                                    .opacity(0)
+                                    .offset(x: 0, y: self.showMusicScaleDetailInfo ? -50: 0)
+                                    .matchedGeometryEffect(id: "musicview", in: shapeTransition)
+                                    
+                            }
                         }
-                    }
-                    .frame(width: 350, height: 50)
-            } else if currentIsland == .music {
-                BackgroundView()
-                    .matchedGeometryEffect(id: "island", in: shapeTransition)
-                    .shadow(color: .gray, radius: self.showMusicdetailInfo ? 10: 0, y: self.showMusicdetailInfo ? 10: 0)
-                    .overlay {
-                        ZStack {
-                            DynamicIslandBatteryView()
-                                .opacity(0)
-                                .matchedGeometryEffect(id: "batteryview", in: shapeTransition)
-                            MusicView(showScaleView: $showMusicdetailInfo)
-                                .opacity(self.showMusicInfo ? 1: 0)
-                                .offset(x: 0, y: self.showMusicdetailInfo ? 0: 40)
-                                .matchedGeometryEffect(id: "musicview", in: shapeTransition)
+                        .frame(width: 350, height: 50)
+                } else if currentIsland == .music {
+                    BackgroundView()
+                        .matchedGeometryEffect(id: "island", in: shapeTransition)
+                        .shadow(color: .gray, radius: self.showMusicdetailInfo ? 10: 0, y: self.showMusicdetailInfo ? 10: 0)
+                        .overlay {
+                            ZStack {
+                                DynamicIslandBatteryView()
+                                    .opacity(0)
+                                    .matchedGeometryEffect(id: "batteryview", in: shapeTransition)
+                                MusicView(showScaleView: $showMusicdetailInfo, showMusicdetialInfo: $showMusicScaleDetailInfo)
+                                    .opacity(self.showMusicInfo ? 1: 0)
+                                    .offset(x: 0, y: self.showMusicScaleDetailInfo ? -50: 0)
+                                    .matchedGeometryEffect(id: "musicview", in: shapeTransition)
+                            }
                         }
-                    }
-                    .frame(width: self.showMusicdetailInfo ? 360: 300, height: self.showMusicdetailInfo ? 190: 60)
+                        .frame(width: self.showMusicScaleDetailInfo ? 360: self.showMusicdetailInfo ? 320: 300, height: self.showMusicScaleDetailInfo ? 210:  self.showMusicdetailInfo ? 90: 60)
+                }
+                Spacer()
             }
-            Spacer()
-            
             self.buttons
-            
-            Spacer()
         }
 
     }
@@ -82,38 +83,36 @@ struct ContentView_Previews: PreviewProvider {
 
 extension ContentView {
     private var buttons: some View {
-        HStack {
+        VStack(alignment: .leading, spacing: 10) {
             Button {
-                withAnimation(.spring()) {
-                    self.currentIsland = .none
-                    self.showMusicdetailInfo = false
-                    self.showMusicInfo = false
-                    self.showBatteryInfo = false
-                }
+                restoreSettings()
             } label: {
-                Text("None")
+                Label("None", systemImage: "camera.metering.none")
             }
+            .disabled(self.buttonDisabled)
             
             Button {
-                
+                buttonDisabled.toggle()
                 withAnimation(.spring(response: 1, dampingFraction: 0.65, blendDuration: 0.01)) {
                     self.currentIsland = .batteryView
                     self.showMusicdetailInfo = false
                     self.showMusicInfo = false
-                    
+                    self.showMusicScaleDetailInfo = false
                 }
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                     withAnimation(.easeInOut) {
                         self.showBatteryInfo = true
                     }
+                    buttonDisabled.toggle()
                 }
             } label: {
-                Text("Battery View")
+                Label("Battery View", systemImage: "battery.100")
             }
+            .disabled(self.buttonDisabled)
             
             Button {
-                
+                buttonDisabled.toggle()
                 withAnimation(.spring(response: 1, dampingFraction: 0.65, blendDuration: 0.01)) {
                     self.currentIsland = .music
                     self.showBatteryInfo = false
@@ -130,9 +129,30 @@ extension ContentView {
                         self.showMusicdetailInfo = true
                     }
                 }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                    withAnimation(.spring()) {
+                        self.showMusicScaleDetailInfo = true
+                    }
+                    buttonDisabled.toggle()
+                }
             } label: {
-                Text("Music View")
+                Label("Music View", systemImage: "music.note")
             }
+            .disabled(self.buttonDisabled)
+        }
+    }
+}
+
+extension ContentView {
+    private func restoreSettings() {
+        self.showBatteryInfo = false
+        
+        self.showMusicScaleDetailInfo = false
+        withAnimation(.spring()) {
+            self.currentIsland = .none
+            self.showMusicdetailInfo = false
+            self.showMusicInfo = false
         }
     }
 }
