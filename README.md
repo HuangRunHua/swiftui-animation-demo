@@ -14,3 +14,4 @@
 - [Medium Clap Animation](https://github.com/HuangRunHua/swiftui-animation-demo/tree/main/MediumClapAnimation.swiftpm): View the demo video -> [🎬](https://twitter.com/joker_hook/status/1554315608417636352?s=20&t=CxSyJQOzn2U0GW7PO3wqNA)
 - [Twitter Style Like Animation](https://github.com/HuangRunHua/swiftui-animation-demo/tree/main/TwitterLikeAnimation): View the demo video -> [🎬](https://twitter.com/joker_hook/status/1561605727688396800?s=21&t=FV7VsMXXYG5fmBBBbcXvpg)
 - [Dynamic Island Animation](https://github.com/HuangRunHua/swiftui-animation-demo/tree/main/dynamic-island-animation-demo): View the demo video -> [🎬](https://twitter.com/joker_hook/status/1568526249135587328?s=46&t=yuXo-FNwoqUt9uKk8ahUgA)
+- [Slide Window](https://github.com/HuangRunHua/swiftui-animation-demo/tree/main/AnimatedWindows): View the demo video -> [🎬](https://twitter.com/joker_hook/status/1568895128999440384?s=46&t=kRIFkym4jz-KZdVM85uJaQ)
