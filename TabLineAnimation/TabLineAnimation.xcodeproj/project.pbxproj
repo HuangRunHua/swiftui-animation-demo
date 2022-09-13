@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDE09E0028D026C9005E6F94 /* TabLineAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE09DF028D026C9005E6F94 /* TabLineAnimationApp.swift */; };
+		BDE09E0128D026C9005E6F94 /* TabLineAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE09DF028D026C9005E6F94 /* TabLineAnimationApp.swift */; };
+		BDE09E0228D026C9005E6F94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE09DF128D026C9005E6F94 /* ContentView.swift */; };
+		BDE09E0328D026C9005E6F94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE09DF128D026C9005E6F94 /* ContentView.swift */; };
+		BDE09E0428D026C9005E6F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE09DF228D026C9005E6F94 /* Assets.xcassets */; };
+		BDE09E0528D026C9005E6F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE09DF228D026C9005E6F94 /* Assets.xcassets */; };
+		BDE09E0F28D026DB005E6F94 /* BoundsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE09E0E28D026DB005E6F94 /* BoundsKey.swift */; };
+		BDE09E1028D026DB005E6F94 /* BoundsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE09E0E28D026DB005E6F94 /* BoundsKey.swift */; };
+		BDE09E1228D02B4D005E6F94 /* TabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE09E1128D02B4D005E6F94 /* TabIcon.swift */; };
+		BDE09E1328D02B4D005E6F94 /* TabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE09E1128D02B4D005E6F94 /* TabIcon.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BDE09DF028D026C9005E6F94 /* TabLineAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabLineAnimationApp.swift; sourceTree = "<group>"; };
+		BDE09DF128D026C9005E6F94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BDE09DF228D026C9005E6F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDE09DF728D026C9005E6F94 /* TabLineAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabLineAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE09DFD28D026C9005E6F94 /* TabLineAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabLineAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE09DFF28D026C9005E6F94 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		BDE09E0E28D026DB005E6F94 /* BoundsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundsKey.swift; sourceTree = "<group>"; };
+		BDE09E1128D02B4D005E6F94 /* TabIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabIcon.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDE09DF428D026C9005E6F94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE09DFA28D026C9005E6F94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDE09DEA28D026C8005E6F94 = {
+			isa = PBXGroup;
+			children = (
+				BDE09DEF28D026C9005E6F94 /* Shared */,
+				BDE09DFE28D026C9005E6F94 /* macOS */,
+				BDE09DF828D026C9005E6F94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDE09DEF28D026C9005E6F94 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BDE09DF028D026C9005E6F94 /* TabLineAnimationApp.swift */,
+				BDE09DF128D026C9005E6F94 /* ContentView.swift */,
+				BDE09E1128D02B4D005E6F94 /* TabIcon.swift */,
+				BDE09E0E28D026DB005E6F94 /* BoundsKey.swift */,
+				BDE09DF228D026C9005E6F94 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BDE09DF828D026C9005E6F94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDE09DF728D026C9005E6F94 /* TabLineAnimation.app */,
+				BDE09DFD28D026C9005E6F94 /* TabLineAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDE09DFE28D026C9005E6F94 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BDE09DFF28D026C9005E6F94 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDE09DF628D026C9005E6F94 /* TabLineAnimation (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE09E0828D026C9005E6F94 /* Build configuration list for PBXNativeTarget "TabLineAnimation (iOS)" */;
+			buildPhases = (
+				BDE09DF328D026C9005E6F94 /* Sources */,
+				BDE09DF428D026C9005E6F94 /* Frameworks */,
+				BDE09DF528D026C9005E6F94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TabLineAnimation (iOS)";
+			productName = "TabLineAnimation (iOS)";
+			productReference = BDE09DF728D026C9005E6F94 /* TabLineAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDE09DFC28D026C9005E6F94 /* TabLineAnimation (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE09E0B28D026C9005E6F94 /* Build configuration list for PBXNativeTarget "TabLineAnimation (macOS)" */;
+			buildPhases = (
+				BDE09DF928D026C9005E6F94 /* Sources */,
+				BDE09DFA28D026C9005E6F94 /* Frameworks */,
+				BDE09DFB28D026C9005E6F94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TabLineAnimation (macOS)";
+			productName = "TabLineAnimation (macOS)";
+			productReference = BDE09DFD28D026C9005E6F94 /* TabLineAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDE09DEB28D026C8005E6F94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BDE09DF628D026C9005E6F94 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					BDE09DFC28D026C9005E6F94 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = BDE09DEE28D026C8005E6F94 /* Build configuration list for PBXProject "TabLineAnimation" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDE09DEA28D026C8005E6F94;
+			productRefGroup = BDE09DF828D026C9005E6F94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDE09DF628D026C9005E6F94 /* TabLineAnimation (iOS) */,
+				BDE09DFC28D026C9005E6F94 /* TabLineAnimation (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDE09DF528D026C9005E6F94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE09E0428D026C9005E6F94 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE09DFB28D026C9005E6F94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE09E0528D026C9005E6F94 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDE09DF328D026C9005E6F94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE09E1228D02B4D005E6F94 /* TabIcon.swift in Sources */,
+				BDE09E0F28D026DB005E6F94 /* BoundsKey.swift in Sources */,
+				BDE09E0228D026C9005E6F94 /* ContentView.swift in Sources */,
+				BDE09E0028D026C9005E6F94 /* TabLineAnimationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE09DF928D026C9005E6F94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE09E1328D02B4D005E6F94 /* TabIcon.swift in Sources */,
+				BDE09E1028D026DB005E6F94 /* BoundsKey.swift in Sources */,
+				BDE09E0328D026C9005E6F94 /* ContentView.swift in Sources */,
+				BDE09E0128D026C9005E6F94 /* TabLineAnimationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BDE09E0628D026C9005E6F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDE09E0728D026C9005E6F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BDE09E0928D026C9005E6F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YRB62S584T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noreply-email.TabLineAnimation";
+				PRODUCT_NAME = TabLineAnimation;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDE09E0A28D026C9005E6F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YRB62S584T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noreply-email.TabLineAnimation";
+				PRODUCT_NAME = TabLineAnimation;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDE09E0C28D026C9005E6F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YRB62S584T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noreply-email.TabLineAnimation";
+				PRODUCT_NAME = TabLineAnimation;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BDE09E0D28D026C9005E6F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YRB62S584T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noreply-email.TabLineAnimation";
+				PRODUCT_NAME = TabLineAnimation;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDE09DEE28D026C8005E6F94 /* Build configuration list for PBXProject "TabLineAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE09E0628D026C9005E6F94 /* Debug */,
+				BDE09E0728D026C9005E6F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDE09E0828D026C9005E6F94 /* Build configuration list for PBXNativeTarget "TabLineAnimation (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE09E0928D026C9005E6F94 /* Debug */,
+				BDE09E0A28D026C9005E6F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDE09E0B28D026C9005E6F94 /* Build configuration list for PBXNativeTarget "TabLineAnimation (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE09E0C28D026C9005E6F94 /* Debug */,
+				BDE09E0D28D026C9005E6F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDE09DEB28D026C8005E6F94 /* Project object */;
+}
