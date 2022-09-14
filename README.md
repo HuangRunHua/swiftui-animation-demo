@@ -18,3 +18,4 @@
 | [Dynamic Island Animation](https://github.com/HuangRunHua/swiftui-animation-demo/tree/main/dynamic-island-animation-demo) | [🎬](https://twitter.com/joker_hook/status/1568526249135587328?s=46&t=yuXo-FNwoqUt9uKk8ahUgA) |
 | [Slide Window](https://github.com/HuangRunHua/swiftui-animation-demo/tree/main/AnimatedWindows) | [🎬](https://twitter.com/joker_hook/status/1568895128999440384?s=46&t=kRIFkym4jz-KZdVM85uJaQ) |
 | [Facebook Tabs Animation](https://github.com/HuangRunHua/swiftui-animation-demo/tree/main/TabLineAnimation) | [🎬](https://twitter.com/joker_hook/status/1569530045865283586?s=46&t=4RU6Rfwa1tAamRj8NwMr3w) |
+| [Apple Photo Detail Check Animation](https://github.com/HuangRunHua/swiftui-animation-demo/tree/main/PhotoScaleEffect) | [🎬](https://twitter.com/joker_hook/status/1569974714126450690?s=46&t=jzBO1LcItDUkLe1zHaGiuw) |
