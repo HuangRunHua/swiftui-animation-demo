@@ -1,6 +1,7 @@
 import SwiftUI
 
-struct ContentView: View {
+struct TwitterAnimationButton: View {
+    let image: String
     typealias Seconds = CGFloat
     /// 设定Image的缩放规则
     private enum ImageScaleRate: CGFloat {
@@ -54,7 +55,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Image("emoji2")
+            Image(image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .scaleEffect(imageScaleRate.rawValue)
@@ -78,7 +79,7 @@ struct ContentView: View {
 }
 
 
-extension ContentView {
+extension TwitterAnimationButton {
     private func like() {
         withAnimation(.easeInOut(duration: tapReactionTimer)) { 
             self.bottonTapped.toggle()

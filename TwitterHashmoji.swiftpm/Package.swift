@@ -16,6 +16,7 @@ let package = Package(
         .iOSApplication(
             name: "TwitterGenshinAnimation",
             targets: ["AppModule"],
+            teamIdentifier: "YRB62S584T",
             displayVersion: "1.0",
             bundleVersion: "1",
             appIcon: .placeholder(icon: .heart),
